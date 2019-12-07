@@ -6,10 +6,12 @@ def forward(no):
 		forward(no-1);
 		print(no);
 
+
 def reverse(no):
 	if no != 0:
 		print(no);
 		reverse(no-1);
+
 
 def main():
 	thread1 = threading.Thread(target = forward, args = (50,));
